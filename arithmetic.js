@@ -1,0 +1,12 @@
+let a=6;
+let b=8;
+s=a/b;
+t=a%b;
+x=a+b;
+y=a-b;
+z=a*b;
+console.log("div=",s);
+console.log("mod=",t);
+console.log("add=",x);
+console.log("sub=",y);
+console.log("mul=",z);
