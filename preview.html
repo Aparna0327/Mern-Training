@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Preview</title>
+</head>
+<body>
+  <h2 id="name">PREVIEW</h2>
+  <img id="pic" src="" width="120">
+  <p id="about"></p>
+  <ul id="projects"></ul>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("portfolioData"));
+    if (data) {
+      document.getElementById("name").textContent = data.name;
+      document.getElementById("about").textContent = data.about;
+      document.getElementById("pic").src = data.image;
+      document.getElementById("projects").innerHTML = data.projects.split(',').map(p => `<li>${p.trim()}</li>`).join('');
+    } else {
+      document.body.innerHTML = '<p>No data found. Please edit your portfolio first.</p>';
+    }
+  </script>
+</body>
+</html>
