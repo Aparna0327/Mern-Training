@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  background-color: #4a90e2;
+  color: white;
+  padding: 30px 20px;
+}
+
+.template-section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.template-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.template-card {
+  width: 330px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+}
+
+.template-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #f8f8f8;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.preview-btn {
+  background-color: #357ABD;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.preview-btn:hover {
+  background-color: #285b9c;
+}
+
+.edit-btn:hover {
+  background-color: #3b9242;
+}
+
+@media (max-width: 768px) {
+  .template-card {
+    width: 90%;
+  }
+}
